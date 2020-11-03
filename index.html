@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu primeiro formulário :)</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Oi, meu nome é (fulana) e esse é o meu primeiro formulário em HTML</h1>
-    <form action="" class="form_principal">
-      <fieldset class="form_principal--fieldset1">
-        <legend>Sobre mim</legend>
+    <div class="h1_container">
+      <h1>
+        Oi, meu nome é <span style="color: blueviolet">(fulana)</span> e esse é
+        o meu primeiro formulário em HTML
+      </h1>
+    </div>
 
+    <div class="form_principal--container">
+        <form action="" class="form_principal">
+            <fieldset class="form_principal--fieldset1">
+        <legend>Sobre mim</legend>
+        
         <label for="meuNome">Meu nome:</label>
         <input type="text" placeholder="Viviane" /><br />
         <label for="minhaIdade">Minha idade:</label>
@@ -21,27 +33,27 @@
         <input type="text" placeholder="Rio de Janeura" /><br />
         <label for="minhaIdade">Qual é o meu maior sonho?</label>
         <textarea name="meuSonho" id="meuSonho" cols="30" rows="10">
-Meu sonho é viajar pelo mundo inteiro</textarea
+            Meu sonho é viajar pelo mundo inteiro</textarea
         ><br />
         <label for="minhaFoto">Essa maravilhouser sou eu:</label>
         <input name="minhaFoto" type="file" />
         <input type="submit" value="Upload" />
       </fieldset>
       <fieldset>
-        <legend>Sobre minha família</legend>
-        <label for="moroCom">Eu moro com:</label>
-        <input type="checkbox" value="sozinha" />
-        <label for="sozinha">Sozinha</label>
-        <input type="checkbox" value="meusPais" />
-        <label for="meusPais">Meus Pais</label>
-        <input type="checkbox" value="irmaosIrmas" />
-        <label for="sozinha">Meus irmãos/ irmãs</label>
-        <input type="checkbox" value="outros" />
-        <label for="outros">Outras pessoas amadas</label>
+          <legend>Sobre minha família</legend>
+          <label for="moroCom">Eu moro com:</label>
+          <input type="checkbox" value="sozinha" />
+          <label for="sozinha">Sozinha</label>
+          <input type="checkbox" value="meusPais" />
+          <label for="meusPais">Meus Pais</label>
+          <input type="checkbox" value="irmaosIrmas" />
+          <label for="sozinha">Meus irmãos/ irmãs</label>
+          <input type="checkbox" value="outros" />
+          <label for="outros">Outras pessoas amadas</label>
         <br />
         <label for="pet">Tenho um pet amado?</label>
         <select name="pet" id="pet">
-          <option value="cachoro">Catioro</option>
+            <option value="cachoro">Catioro</option>
           <option value="gato">Gatíneo</option>
           <option value="ave">Papagaio/ periquito/ passarinho</option>
           <option value="peixes">Peixíneos</option>
@@ -52,46 +64,48 @@ Meu sonho é viajar pelo mundo inteiro</textarea
         <input type="radio" id="casa" name="moradia" value="casa" />
         <label for="male">Casita</label><br />
         <input
-          type="radio"
-          id="apartamento"
-          name="moradia"
-          value="apartamento"
+        type="radio"
+        id="apartamento"
+        name="moradia"
+        value="apartamento"
         />
         <label for="female">Apê</label><br />
         <input type="radio" id="outro" name="moradia" value="outro" />
         <label for="other">Sou nômade, amadah</label>
       </fieldset>
       <fieldset>
-        <legend>Meus hobbies e coisitas que goixto</legend>
-        <label for="atividadesLazer">O que me deixa feliz?</label>
-        <input type="text" name="atividadesLazer" /><br />
-        <label for="comidaFavorita">O que eu mais gosto de comer?</label>
-        <input type="text" name="comidaFavorita" /><br />
+          <legend>Meus hobbies e coisitas que goixto</legend>
+          <label for="atividadesLazer">O que me deixa feliz?</label>
+          <input type="text" name="atividadesLazer" /><br />
+          <label for="comidaFavorita">O que eu mais gosto de comer?</label>
+          <input type="text" name="comidaFavorita" /><br />
         <label for="lugarFavorito">Lugar preferido:</label>
         <input type="text" name="sobremesaFavorita" /><br />
         <label for="serieFavorita">Série/Filme que eu amo:</label>
         <input type="text" name="serieFavorita" /><br />
         <label for="musicaFavorita">Melior música ever do planeta:</label>
         <audio
-          src="./WhatsApp Audio 2020-11-03 at 17.11.29.mp4"
-          controls
-          autoplay
+        src="./WhatsApp Audio 2020-11-03 at 17.11.29.mp4"
+        controls
+        autoplay
         ></audio
         ><br />
-      </fieldset>
-      <div>
-        <p>Meu login</p>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Meu login</legend>
         <label for="username">Username:</label>
         <input type="email" name="email" id="email" /><br />
         <label for="senha">Senha:</label>
         <input type="password" name="senha" id="senha" /><br />
         <button type="submit">Enviar</button>
-      </div>
-    </form>
+    </fieldset>
+</form>
+</div>
 
     <!-- DESAFIO EXTRA -->
-    <p>Minha rotina semanal:</p>
     <table>
+        <p style="text-align: center; font-weight: bold; font-size: 20px;">Minha rotina semanal:</p>
       <tr>
         <th></th>
         <th>Segunda</th>
@@ -119,7 +133,7 @@ Meu sonho é viajar pelo mundo inteiro</textarea
         <td>Reprograma yaay</td>
         <td>Estudar de leve</td>
         <td>Jogar videogame</td>
-        <td>Reprigrama yay</td>
+        <td>Reprograma yay</td>
         <td>Sair pra caminhar com as migs (de máscara né mores)</td>
       </tr>
       <tr>
@@ -135,7 +149,10 @@ Meu sonho é viajar pelo mundo inteiro</textarea
     </table>
 
     <footer>
-        <p>Esse formulário foi criado durante o curso Reprograma Teens, em novembro de 2020</p>
+      <p>
+        Esse formulário foi criado durante o curso Reprograma Teens, em novembro
+        de 2020
+      </p>
     </footer>
   </body>
 </html>
