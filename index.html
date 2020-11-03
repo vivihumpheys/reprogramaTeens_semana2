@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu primeiro formulário :)</title>
+  </head>
+  <body>
+    <h1>Oi, meu nome é (fulana) e esse é o meu primeiro formulário em HTML</h1>
+    <form action="" class="form_principal">
+      <fieldset class="form_principal--fieldset1">
+        <legend>Sobre mim</legend>
+
+        <label for="meuNome">Meu nome:</label>
+        <input type="text" placeholder="Viviane" /><br />
+        <label for="minhaIdade">Minha idade:</label>
+        <input type="text" placeholder="28" /><br />
+        <label for="dataNascimento">Eu vim ao mundão no dia:</label>
+        <input type="date" value="dataNascimento" name="dataNascimento" /><br />
+        <label for="minhaCidade">Minha cidade:</label>
+        <input type="text" placeholder="São Paulo, mas sou carioca :)" /><br />
+        <label for="minhaIdade">Qual é o meu maior sonho?</label>
+        <textarea name="meuSonho" id="meuSonho" cols="30" rows="10">
+        Meu sonho é viajar pelo mundo inteiro</textarea
+        ><br />
+        <label for="minhaFoto">Essa maravilhouser sou eu:</label>
+        <input name="minhaFoto" type="file" />
+        <input type="submit" value="Upload" />
+      </fieldset>
+      <fieldset>
+        <legend>Sobre minha família</legend>
+        <label for="moroCom">Eu moro com:</label>
+        <input type="checkbox" value="sozinha" />
+        <label for="sozinha">Sozinha</label>
+        <input type="checkbox" value="meusPais" />
+        <label for="meusPais">Meus Pais</label>
+        <input type="checkbox" value="irmaosIrmas" />
+        <label for="sozinha">Meus irmãos/ irmãs</label>
+        <input type="checkbox" value="outros" />
+        <label for="outros">Outras pessoas amadas</label>
+        <br />
+        <label for="pet">Tenho um pet amado?</label>
+        <select name="pet" id="pet">
+          <option value="cachoro">Catioro</option>
+          <option value="gato">Gatíneo</option>
+          <option value="ave">Papagaio/ periquito/ passarinho</option>
+          <option value="peixes">Peixíneos</option>
+          <option value="nenhum">Não tenho Pets :/</option>
+        </select>
+        <br />
+        <label for="ondeMoro">Eu moro num(a) bela/o:</label><br />
+        <input type="radio" id="casa" name="moradia" value="casa" />
+        <label for="male">Casita</label><br />
+        <input
+          type="radio"
+          id="apartamento"
+          name="moradia"
+          value="apartamento"
+        />
+        <label for="female">Apê</label><br />
+        <input type="radio" id="outro" name="moradia" value="outro" />
+        <label for="other">Sou nômade, amadah</label>
+      </fieldset>
+    </form>
+  </body>
+</html>
