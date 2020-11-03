@@ -48,7 +48,11 @@ fieldset > textarea:focus {
   background-color: palevioletred;
 }
 
-fieldset>input, select:focus{
+fieldset>input:focus{
+  background-color: white;
+}
+
+fieldset>select:focus{
   background-color: white;
 }
 
